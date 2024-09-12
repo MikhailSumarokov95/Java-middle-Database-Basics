@@ -53,8 +53,8 @@ COMMENT ON COLUMN student18.tb_track.album_id                       IS 'Иден
 CREATE TABLE IF NOT EXISTS student18.tb_track_to_genre();
 
 ALTER TABLE IF EXISTS student18.tb_track_to_genre
-	ADD COLUMN IF NOT EXISTS track_id                               BIGSERIAL REFERENCES tb_track(id),
-	ADD COLUMN IF NOT EXISTS genre_id                               BIGSERIAL REFERENCES tb_genre(id)
+    ADD COLUMN IF NOT EXISTS track_id                               BIGSERIAL REFERENCES tb_track(id),
+    ADD COLUMN IF NOT EXISTS genre_id                               BIGSERIAL REFERENCES tb_genre(id)
 ;
 
 COMMENT ON TABLE  student18.tb_track_to_genre                       IS 'Соотношение трека с жанром';
@@ -64,8 +64,8 @@ COMMENT ON COLUMN student18.tb_track_to_genre.genre_id              IS 'Иден
 CREATE TABLE IF NOT EXISTS student18.tb_track_to_performer();
 
 ALTER TABLE IF EXISTS student18.tb_track_to_performer
-	ADD COLUMN IF NOT EXISTS track_id                               BIGSERIAL REFERENCES tb_track(id),
-	ADD COLUMN IF NOT EXISTS performer_id                           BIGSERIAL REFERENCES tb_performer(id)
+    ADD COLUMN IF NOT EXISTS track_id                               BIGSERIAL REFERENCES tb_track(id),
+    ADD COLUMN IF NOT EXISTS performer_id                           BIGSERIAL REFERENCES tb_performer(id)
 ;
 
 COMMENT ON TABLE  student18.tb_track_to_performer                   IS 'Соотношение трека с исполнителем';
