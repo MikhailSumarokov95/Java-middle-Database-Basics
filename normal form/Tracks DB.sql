@@ -49,7 +49,7 @@ COMMENT ON COLUMN student18.tb_track.id                             IS 'Иден
 COMMENT ON COLUMN student18.tb_track.name                           IS 'Имя трека';
 COMMENT ON COLUMN student18.tb_track.year                           IS 'Год выпуска трека';
 COMMENT ON COLUMN student18.tb_track.duration                       IS 'Продолжительность трека';
-COMMENT ON COLUMN student18.tb_track.number_plays					IS 'Количество прослушиваний';
+COMMENT ON COLUMN student18.tb_track.number_plays                   IS 'Количество прослушиваний';
 COMMENT ON COLUMN student18.tb_track.album_id                       IS 'Идентификатор альбома';
 
 CREATE TABLE IF NOT EXISTS student18.tb_track_to_genre();
