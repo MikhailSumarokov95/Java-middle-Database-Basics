@@ -40,6 +40,7 @@ ALTER TABLE IF EXISTS student18.tb_track
     ADD COLUMN IF NOT EXISTS name                                   VARCHAR,
     ADD COLUMN IF NOT EXISTS year                                   SMALLINT,
     ADD COLUMN IF NOT EXISTS duration                               SMALLINT,
+    ADD COLUMN IF NOT EXISTS number_plays                           INT,
     ADD COLUMN IF NOT EXISTS album_id                               BIGSERIAL REFERENCES tb_album(id)
 ;
 
@@ -48,6 +49,7 @@ COMMENT ON COLUMN student18.tb_track.id                             IS 'Иден
 COMMENT ON COLUMN student18.tb_track.name                           IS 'Имя трека';
 COMMENT ON COLUMN student18.tb_track.year                           IS 'Год выпуска трека';
 COMMENT ON COLUMN student18.tb_track.duration                       IS 'Продолжительность трека';
+COMMENT ON COLUMN student18.tb_track.number_plays					IS 'Количество прослушиваний';
 COMMENT ON COLUMN student18.tb_track.album_id                       IS 'Идентификатор альбома';
 
 CREATE TABLE IF NOT EXISTS student18.tb_track_to_genre();
