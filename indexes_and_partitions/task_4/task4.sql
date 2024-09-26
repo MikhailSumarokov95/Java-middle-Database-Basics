@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS author_id_index ON student18.tb_book_to_author (author_id);

@@ -11,7 +11,7 @@ INNER JOIN tb_performer p ON p.id = tp.performer_id;
 
 SELECT *
 FROM tb_track t
-RI OUTER JOIN tb_track_to_performer tp ON tp.track_id = t.id
+LEFT OUTER JOIN tb_track_to_performer tp ON tp.track_id = t.id
 LEFT OUTER JOIN tb_performer p ON p.id = tp.performer_id;
 
 SELECT *
